@@ -1,0 +1,54 @@
+{
+	"format_version": 1,
+	"imports": [{
+			"target_table": "IlumindaDbs.con_records",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "ConditionRecords.csv",
+				"has_header": true,
+				"type_config": {
+					"delimiter": ",",
+					"do_quote": true
+				}
+			},
+			"import_settings": {
+				"import_columns": [
+					"fields", "condi", "signs"
+				]
+			}
+		},
+
+		{
+			"target_table": "IlumindaDbs.Sales",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "Sales.csv",
+				"has_header": true,
+				"type_config": {
+					"delimiter": ",",
+					"do_quote": true
+				}
+			},
+			"import_settings": {
+				"import_columns": ["doc", "condi", "amount"]
+			}
+		},
+
+		{
+			"target_table": "IlumindaDbs.con_records_all",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "CombinedConditions.csv",
+				"has_header": true,
+				"type_config": {
+					"delimiter": ",",
+					"do_quote": true
+				}
+			},
+			"import_settings": {
+				"import_columns": ["fields", "condi_all"]
+			}
+		}
+
+	]
+}

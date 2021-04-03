@@ -1,0 +1,18 @@
+context IlumindaDbs {
+    entity con_records {
+        fields : String(5);
+        condi  : String(4);
+        signs  : Integer;
+    };
+
+    entity con_records_all {
+        fields    : String(5);
+        condi_all : String(50);
+    };
+
+    entity Sales {
+        doc    : String(10);
+        condi  : String(4);
+        amount : Decimal(10, 2);
+    };
+};
