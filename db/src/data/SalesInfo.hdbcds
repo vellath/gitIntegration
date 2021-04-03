@@ -1,7 +1,7 @@
 context IlumindaDbs {
     entity con_records {
         fields : String(5);
-        condi  : String(4);
+        condi  : String(5);
         signs  : Integer;
     };
 
